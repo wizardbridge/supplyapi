@@ -11,7 +11,7 @@ function sleep(ms) {
 // Function to fetch data from the API
 async function fetchData(moduleName, action, params) {
   const baseUrl = "https://api.basescan.org";
-  const apiKey = "AZ";
+  const apiKey = "";
   const apiUrl = `${baseUrl}/api`;
 
   const queryParams = new URLSearchParams();
