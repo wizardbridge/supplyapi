@@ -89,6 +89,11 @@ async function calculateRemainingSupply() {
 
 const app = express();
 
+app.get("/", async (req, res) => {
+  const data = await calculateRemainingSupply();
+  return res.send(data.toString());
+});
+
 app.get("/base", async (req, res) => {
   const data = await calculateRemainingSupply();
   return res.send(data.toString());
