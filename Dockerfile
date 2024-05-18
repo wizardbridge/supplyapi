@@ -6,3 +6,4 @@ RUN yarn install
 
 EXPOSE 3003
 CMD ["node", "main.js"]
+ 
